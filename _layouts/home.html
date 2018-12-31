@@ -6,7 +6,8 @@ layout: default
   <div>
     <section class="bg"></section>
     <h1>{{site.description}}</h1>
-    <a href="/about"> Movement & Community</a>
+    <a href="/manifesto">Manifesto</a>
+    <a href="/contributors">Contributors</a>
   </div>
 </section>
 <section id="posts">
@@ -16,15 +17,15 @@ layout: default
       {% for post in site.posts %}
       <div class="post">
         <div class="title">
-          <a href="{{ post.url | relative_url }}">  - {{ post.title }}</a>
+          <span>{{post.date | date: "%-d/%-M/%-y"}}.</span> <a href="{{ post.url | relative_url }}"> {{ post.title }}</a>
+          <div class="meta">
+            {% for a in post.authors %}
+            <div class="placeholder">
+              <a class="avatar" href="https://github.com/{{a}}"  target="_blank"><img src="https://github.com/{{a}}.png" alt="{{a}}" /></a></div>
+            {% endfor %}
+          </div>
         </div>
-        <div class="meta">
-          &nbsp;
-          {% for a in post.authors %}
-          <div class="placeholder">
-            <img src="https://github.com/{{a}}.png" alt="{{a}}" /></div>
-          {% endfor %}
-        </div>
+
       </div>
       {% endfor %}
     </div>

@@ -1,0 +1,80 @@
+header {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  line-height: 1.3em;
+  padding: 0.8em 2em;
+  padding-bottom: 1em;
+  background-color: #000;
+  color: #FFFFFF;
+
+  .site-title {
+    font-size: 1.3em;
+
+    a {
+      color: #fff !important;
+      text-decoration: none !important;
+    }
+
+    img {
+      height: 0.5em;
+    }
+  }
+
+  nav {
+    flex: 1;
+    text-align: right;
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        font-weight: bold;
+        padding: 0 0.5em;
+        font-size: 0.9em;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .site-description {
+    font-size: 0.8em;
+    opacity: 0.8;
+  }
+
+  a {
+    //font-family: $links;
+    color: inherit;
+    opacity: 0.8;
+  }
+
+  a, a:visited {
+    text-decoration: none;
+    color: #ccc;
+
+    &:hover, &:active {
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+
+
+}
+
+
+@media only screen and (max-width: 700px) {
+  header {
+    nav {
+      ul {
+        li {
+          display: block;
+          padding-bottom: 0.5em;
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+
+}
