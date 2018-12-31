@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="{{ page.lang | default: site.lang }}">
+  <head>
+    <link rel='stylesheet'  href="{{ site.styles | relative_url }}" />
+    <title>{% if page.title %}{{ page.title }} → {% endif %}{{ site.title }}</title>
+    <!-- http://t.co/dKP3o1e -->
+    <meta name="HandheldFriendly" content= "True" />
+    <meta name="MobileOptimized" content=320" />
+    <meta name="viewport" content=width=device-width, initial-scale=1.0"/>
+  <body>
+    <header>
+      <div class="site-title">
+        <a href= "{{ site.base_url }}/">{{ site.title }}</a>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Tunisia.svg/1920px-Flag_of_Tunisia.svg.png" alt="fff" /></div>
+      {% if hide_profiles != true %}
+      {% for profile in site.external_profiles %}
+      <a href= "{{ profile[1] }}" title= "{{ profile[0] }}" class= "profile {{ profile[0] }}">
+        <span>{{ profile[0] }}</span></a>
+      {% endfor %}
+      {% endif %}
+      <nav>
+        {% if show_navigation != false %}
+        <ul>
+          <li>
+            <a href= "/"> Articles</a>
+          </li>
+          {% for p in site.pages %}
+          {% if p.title and p.parent == nil or p.parent != page.id %}
+          <li>
+            <a href={{ p.url }}">{{ p.title }}</a>
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </nav>
+    </header>
+    <article>
+      <div class="inner">
+        {{ content }}
+      </div>
+    </article>
+  </body>
+  <footer>
+    <div class="inner">
+      Copyleft {{ site.time | date: '%Y' }} {{ site.title }} and contributors.
+    </div>
+  </footer>
+
