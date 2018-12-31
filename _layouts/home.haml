@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+{{ content }}
+
+%section#hero
+  %div
+    %section.bg
+    %h1 {{site.description}}
+    %a{href:'/about'} Movement & Community
+
+
+%section#posts
+  %div.inner
+    %div.content
+      %h3 Articles
+      {% for post in site.posts %}
+      .post
+        %div.title
+          %a{href: "{{ post.url | relative_url }}" } - {{ post.title }}
+        %div.meta
+          -#%small {{ post.date | date_to_long_string }}
+          &nbsp;
+          {% for a in post.authors %}
+          %div.placeholder
+            %img{src: "https://github.com/{{a}}.png", alt:"{{a}}"}
+          {% endfor %}
+
+      {% endfor %}
+
+    %div.topics
+      %h4 Topics
+      %ul
+        {% assign categories_list = site.categories %}
+        {% if categories_list.first[0] == null %}
+        {% for category in categories_list %}
+        %li
+          %a{href:"{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}"} {{ category | camelcase }} ({{ site.tags[category].size }})
+        {% endfor %}
+        {% else %}
+        {% for category in categories_list %}
+        %li
+          %a{href:"{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}"}
+            %span {{ category[0] | camelcase }}
+            %span {{ category[1].size }}
+        {% endfor %}
+        {% endif %}
+        {% assign categories_list = nil %}
