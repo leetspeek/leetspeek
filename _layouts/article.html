@@ -3,6 +3,15 @@ layout: default
 ---
 
 <section id="article">
-  <h1>{{ page.title }}</h1>
+  <h1>{{ page.title }}
+  <div class="authors">
+    {% for a in page.authors %}
+    <div class="placeholder">
+      <a class="avatar" title="{{a}}" href="https://github.com/{{a}}"  target="_blank"><img src="https://github.com/{{a}}.png" alt="{{a}}" /></a></div>
+    {% endfor %}
+  </div>
+  </h1>
+  {% include toc.html html=content %}
+
   {{ content }}
 </section>

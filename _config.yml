@@ -1,6 +1,7 @@
 # in the templates via {{ site.myvariable }}.
 lang: en
 styles: /assets/leetspeak.css
+highlight: /assets/monokai.css
 loading: /assets/loading.js
 
 title: leetspeak
@@ -18,6 +19,9 @@ plugins:
   - jekyll-feed
 sass:
   style: compressed
+
+highlighter: rouge
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

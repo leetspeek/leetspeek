@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Designing for Interaction Modes"
 date:   2018-12-29 21:07:45 +0100
 categories: jekyll update

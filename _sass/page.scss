@@ -1,0 +1,55 @@
+#page, #article {
+  padding-top: 1em;
+  max-width: 65em;
+  margin: 0 auto;
+  h1 {
+    font-family:  $default;
+    padding-bottom: 0.4em;
+    margin-bottom: 0.4em;
+    border-bottom: 1px dashed #ccc;
+  }
+
+  font-size: 1.1em;
+  font-family:  'Roboto', serif;
+}
+
+.highlight {
+  border-radius: 3px;
+  background: #f1f1f1;
+  padding: 1em;
+  margin: 0;
+  margin-bottom:  2em;
+
+  pre {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+.authors {
+  padding-top: 0.5em;
+  .placeholder{
+    margin-right: 0em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background: #f1f1f1;
+  }
+
+  img {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  a.avatar {
+    font-size: 1em;
+    line-height: 0.8em;
+  }
+
+
+}
