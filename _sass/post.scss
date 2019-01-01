@@ -1,5 +1,6 @@
 .post {
   padding-bottom: 0.3em;
+
   .title {
     padding-bottom: 0.5em;
 
@@ -12,7 +13,8 @@
       font-size: 1.2em;
       font-weight: bold;
       color: #000;
-      &:hover{
+
+      &:hover {
         color: #000;
       }
     }
@@ -20,13 +22,12 @@
   }
 
 
-
   .meta {
-    color:#ccc;
+    color: #ccc;
     display: inline-block;
     margin-left: 0.2em;
 
-    .placeholder{
+    .placeholder {
       margin-right: 0em;
       display: inline-block;
       width: 1em;
@@ -53,7 +54,6 @@
 }
 
 
-
 @media only screen and (max-width: 700px) {
 
   .post {
@@ -63,6 +63,7 @@
         display: block;
       }
     }
+
     .meta {
       margin-left: 0em;
       margin-top: 0.5em;
@@ -71,6 +72,6 @@
 
     border-bottom: 1px dashed #f1f1f1;
     margin-bottom: 10px;
-    }
+  }
 
 }

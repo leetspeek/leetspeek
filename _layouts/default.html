@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
 
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
     <title>Leetspeak - {{page.title}}</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    <link rel='stylesheet' href="{{ site.styles | relative_url }}"/>
-    <link rel='stylesheet' href="{{ site.highlight | relative_url }}"/>
+    <link href="{{ site.styles | relative_url }}" rel='stylesheet'/>
+    <link href="{{ site.highlight | relative_url }}" rel='stylesheet'/>
 
 </head>
 
@@ -23,8 +23,8 @@
 <header>
     <div class="site-title">
         <a href="{{ site.base_url }}/">{{ site.title }}</a>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Tunisia.svg/1920px-Flag_of_Tunisia.svg.png"
-             alt="fff"/></div>
+        <img alt="fff"
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Tunisia.svg/1920px-Flag_of_Tunisia.svg.png"/></div>
 
     <nav>
         {% if show_navigation != false %}

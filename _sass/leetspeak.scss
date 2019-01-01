@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=VT323');
-@import url('https://fonts.googleapis.com/css?family=Lato|VT323');
-@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+//@import url('https://fonts.googleapis.com/css?family=VT323');
+//@import url('https://fonts.googleapis.com/css?family=Lato|VT323');
+//@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Mono|Space+Mono');
-
-$links: 'VT323', monospace;
-
-@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+//@import url('https://fonts.googleapis.com/css?family=Space+Mono');
 
 
+
+$links: 'Roboto Mono', monospace;
 $default: 'Roboto Mono', monospace;
-
 
 
 body {
@@ -44,8 +42,6 @@ h1, h2, h3 {
     font-size: 10px;
   }
 }
-
-
 
 
 .highlighter-rouge {
