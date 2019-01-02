@@ -1,0 +1,42 @@
+---
+layout: page
+permalink: /topics/
+title: Topics
+---
+
+
+<div id="archives">
+    {% for category in site.categories %}
+    <div class="archive-group">
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        <div id="#{{ category_name | slugize }}"></div>
+        <p></p>
+
+        <h2 class="category-head">{{ category_name }}</h2>
+        <a name="{{ category_name | slugize }}"></a>
+        {% for post in site.categories[category_name] %}
+
+        <div class="post">
+            <div class="title">
+                <span>{{post.date | date: "%-d/%-M/%-y"}}.</span> <a href="{{ post.url | relative_url }}"> {{
+                post.title }}</a>
+                <div class="meta">
+                    {% for a in post.authors %}
+                    <a class="avatar" title="{{a}}" href="https://github.com/{{a}}" target="_blank">
+                        <div class="placeholder">
+                            <img
+                                    src="https://github.com/{{a}}.png" alt=""/>
+                        </div>
+                    </a>
+                    {% endfor %}
+
+                </div>
+
+            </div>
+        </div>
+
+
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>

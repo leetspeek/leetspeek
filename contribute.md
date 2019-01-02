@@ -4,15 +4,28 @@ title: How to contribute
 permalink: /contribute/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+How to contribute
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+# Writing Articles
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Intro ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque molestias quae similique ut! Ad aspernatur atque autem culpa delectus doloribus error facere illum molestiae natus, nesciunt omnis quisquam voluptatem!
 
+## Forking the repo
 
-[jekyll-organization]: https://github.com/jekyll
+Intro ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque molestias quae similique ut! Ad aspernatur atque autem culpa delectus doloribus error facere illum molestiae natus, nesciunt omnis quisquam voluptatem!
+
+## Adding a new article
+
+Intro ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque molestias quae similique ut! Ad aspernatur atque autem culpa delectus doloribus error facere illum molestiae natus, nesciunt omnis quisquam voluptatem!
+
+## Adding code
+
+Intro ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque molestias quae similique ut! Ad aspernatur atque autem culpa delectus doloribus error facere illum molestiae natus, nesciunt omnis quisquam voluptatem!
+
+## Adding images
+
+Intro ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque molestias quae similique ut! Ad aspernatur atque autem culpa delectus doloribus error facere illum molestiae natus, nesciunt omnis quisquam voluptatem!
+
+## Peer-reviewing
+
+Intro ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque molestias quae similique ut! Ad aspernatur atque autem culpa delectus doloribus error facere illum molestiae natus, nesciunt omnis quisquam voluptatem!

@@ -1,18 +1,19 @@
 ---
 layout: page
-title: Manifesto
+title: Leetspeak Manifesto
 permalink: /manifesto/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Manifesto
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+# Call of duty
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Intro ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque molestias quae similique ut! Ad aspernatur atque autem culpa delectus doloribus error facere illum molestiae natus, nesciunt omnis quisquam voluptatem!
 
+# Ethics
 
-[jekyll-organization]: https://github.com/jekyll
+Intro ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque molestias quae similique ut! Ad aspernatur atque autem culpa delectus doloribus error facere illum molestiae natus, nesciunt omnis quisquam voluptatem!
+
+# Language
+
+Intro ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque molestias quae similique ut! Ad aspernatur atque autem culpa delectus doloribus error facere illum molestiae natus, nesciunt omnis quisquam voluptatem!

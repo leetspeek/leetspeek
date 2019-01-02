@@ -44,7 +44,7 @@ layout: default
                     {% if categories_list.first[0] == null %}
                     {% for category in categories_list %}
                     <li>
-                        <a href="{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}"> {{
+                        <a href="{{site.baseurl}}/topics/#{{category|slugize}}"> {{
                             category
                             | camelcase }} ({{ site.tags[category].size }})</a>
                     </li>
@@ -52,7 +52,7 @@ layout: default
                     {% else %}
                     {% for category in categories_list %}
                     <li>
-                        <a href="{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">
+                        <a href="{{site.baseurl}}/topics/#{{category[0]|slugize}}">
                             <span>{{ category[0] | camelcase }}</span>
                             <span>{{ category[1].size }}</span></a>
                     </li>
