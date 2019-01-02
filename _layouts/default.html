@@ -5,12 +5,12 @@
     <meta charset="utf-8">
 
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <title>Leetspeak - {{page.title}}</title>
+    <title>{{page.title}}{% if page.title %} / {% endif %}Leetspeak</title>
     <meta content="" name="description">
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    <link href="{{ site.styles | relative_url }}" rel='stylesheet'/>
-    <link href="{{ site.highlight | relative_url }}" rel='stylesheet'/>
+    <link href="/assets/leetspeak.css" rel='stylesheet'/>
+    <link href="/assets/monokai.css" rel='stylesheet'/>
 
 </head>
 
@@ -54,7 +54,7 @@
 
 <footer>
     <div class="inner">
-        Copyleft {{ site.time | date: '%Y' }} {{ site.title }} and contributors.
+        Copyleft {{ site.time | date: '%Y' }} {{ site.title }} and <a href="/contributors">contributors</a>.
     </div>
 </footer>
 

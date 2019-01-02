@@ -1,9 +1,5 @@
 # Site settings
 lang: en
-styles: /assets/leetspeak.css
-highlight: /assets/monokai.css
-loading: /assets/loading.js
-
 title: leetspeak
 email: ping@leetspeak.tn
 description: >-

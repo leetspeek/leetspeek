@@ -4,17 +4,18 @@ layout: default
 
 <section id="article">
     <div class="inner">
-        <h1>{{ page.title }}
+        <h1 class="title">{{ page.title }}
             <div class="authors">
                 {% for a in page.authors %}
                 <div class="placeholder">
                     <a class="avatar" href="https://github.com/{{a}}" target="_blank" title="{{a}}"><img
-                            alt="{{a}}" src="https://github.com/{{a}}.png"/></a></div>
+                            alt="" src="https://github.com/{{a}}.png"/></a></div>
                 {% endfor %}
             </div>
         </h1>
-        {% include toc.html html=content %}
+        {% include toc.html html=content id="toc" h_max=2 %}
 
         {{ content }}
     </div>
 </section>
+

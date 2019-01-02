@@ -85,4 +85,6 @@ generate the table of contents and will NOT output the markdown given to it
 {% capture my_toc %}{: #{{ include.id }}}
 {{ my_toc | lstrip }}{% endcapture %}
 {% endif %}
-{% endcapture %}{% assign tocWorkspace = '' %}{{ my_toc | markdownify | strip }}
+{% endcapture %}{% assign tocWorkspace = '' %}
+
+{{ my_toc | markdownify | strip }}

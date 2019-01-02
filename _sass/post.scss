@@ -40,13 +40,18 @@
       width: 1em;
       height: 1em;
       border-radius: 50%;
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
+      //-webkit-filter: grayscale(100%);
+      //filter: grayscale(100%);
     }
 
     a.avatar {
       font-size: 1em;
       line-height: 0.8em;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
 
 

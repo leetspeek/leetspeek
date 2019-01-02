@@ -48,9 +48,13 @@ article {
   }
 
   .topics {
-    padding-left: 1.5em;
     padding-top: 2em;
     width: 18em;
+    padding-left: 1.5em;
+
+    .inner {
+      display: block;
+    }
 
     ul {
       border-top: 1px dashed #ccc;
@@ -75,6 +79,8 @@ article {
 
 @media only screen and (max-width: 700px) {
 
+
+
   #posts {
     .content {
 
@@ -86,8 +92,16 @@ article {
     }
 
     .topics {
+      width: auto;
       padding-top: 0em;
       padding-bottom: 2em;
+
+      padding-right: 1.5em;
+      .inner {
+        font-family: 'Roboto', sans-serif;
+        max-width: 65em;
+        margin: 0 auto;
+      }
 
       ul {
         margin-right: 0;
