@@ -1,10 +1,18 @@
 #page, #article {
 
   font-size: 1em;
-  line-height: 1.4em;
+  line-height: 1.8em;
 
   p {
-    max-width: 95%;
+    max-width: 75%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  ul {
+    max-width: 80%;
+    padding-bottom:  1em;
   }
 
   .inner{
