@@ -3,6 +3,7 @@ layout: page
 title: Leetspeak Manifesto
 permalink: /manifesto/
 ---
+Leetspeak is a learning-oriented collective that is open to everyone, our primary focus is to encourage learning, blogging in order to deepen knowledge on various computer science areas.
 
 This is our manifesto; a public declaration of the intentions, motives, and views of the Leetspeak Tunisian Collective.
 
