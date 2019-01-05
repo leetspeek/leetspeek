@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Leetspeak Manifesto
+title: leetspeek Manifesto
 permalink: /manifesto/
 ---
-Leetspeak is a learning-oriented collective that is open to everyone, our
+leetspeek is a learning-oriented collective that is open to everyone, our
  primary focus is to encourage learning, blogging in order to deepen knowledge
  on various computer science areas.
 
 This is our manifesto; a public declaration of the intentions, motives  and
- views of the Leetspeak Collective.
+ views of the leetspeek Collective.
 
 # Call of duty
 
@@ -30,7 +30,7 @@ This is a call for hackers of the world to unite and to produce an intermediate
 # Ethics
 
 We consider that the ethic and the code of conduct of all activities in a 
-relationship with leetspeak should follow Levy's hacker ethics stated 
+relationship with leetspeek should follow Levy's hacker ethics stated 
 in his book "Hackers: Heroes of the Computer Revolution 
 (ISBN 0-440-13405-6, 1984) :
 

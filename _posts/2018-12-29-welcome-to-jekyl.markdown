@@ -2,7 +2,7 @@
 layout: article
 title:  "Example advanced Article"
 date:   2018-12-29 21:07:45 +0100
-categories: leetspeak@
+categories: leetspeek@
 authors: [aminekaabachi]
 ---
 

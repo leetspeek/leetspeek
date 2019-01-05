@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     async function getData() {
-        let response = await fetch('https://api.github.com/repos/leetspeak-tunisia/leetspeak-tunisia.github.io/contributors?page=1');
+        let response = await fetch('https://api.github.com/repos/leetspeek-tunisia/leetspeek-tunisia.github.io/contributors?page=1');
         // let response = await fetch('https://api.github.com/repos/google/ggrc-core/contributors?page=1');
         let data = await response.json()
         return data;
