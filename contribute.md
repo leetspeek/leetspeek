@@ -8,24 +8,28 @@ How to contribute
 
 # Writing Articles
 
-Intro ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque molestias quae similique ut! Ad aspernatur atque autem culpa delectus doloribus error facere illum molestiae natus, nesciunt omnis quisquam voluptatem!
+Start by writing short articles, explain step by step how to do something.
+ Write a first draft before attacking the revision. You may share your work
+ here in different branch and ask for revision. 
 
 ## Forking the repo
 
-Intro ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque molestias quae similique ut! Ad aspernatur atque autem culpa delectus doloribus error facere illum molestiae natus, nesciunt omnis quisquam voluptatem!
+TO DO 
 
 ## Adding a new article
 
-Intro ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque molestias quae similique ut! Ad aspernatur atque autem culpa delectus doloribus error facere illum molestiae natus, nesciunt omnis quisquam voluptatem!
+TO DO 
+
 
 ## Adding code
 
-Intro ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque molestias quae similique ut! Ad aspernatur atque autem culpa delectus doloribus error facere illum molestiae natus, nesciunt omnis quisquam voluptatem!
+TO DO 
 
 ## Adding images
 
-Intro ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque molestias quae similique ut! Ad aspernatur atque autem culpa delectus doloribus error facere illum molestiae natus, nesciunt omnis quisquam voluptatem!
+TO DO 
 
 ## Peer-reviewing
 
-Intro ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque molestias quae similique ut! Ad aspernatur atque autem culpa delectus doloribus error facere illum molestiae natus, nesciunt omnis quisquam voluptatem!
+First Create an issue following the Issue Templates.
+Second Publish your PR and tag members for Peer review.
