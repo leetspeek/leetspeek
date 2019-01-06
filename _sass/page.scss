@@ -9,11 +9,20 @@
   font-kerning: normal;
 
 
-  p {
 
+
+  p {
+    a {text-decoration: underline;}
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
   }
 
   ul {
+    a {text-decoration: underline;}
+
     padding-bottom:  1em;
   }
 
@@ -59,6 +68,13 @@
 
 
   #toc {
+
+    a {color: #333; text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
     padding: 0px;
     padding-bottom: 0.8em;
     margin-bottom: 0.8em;
@@ -81,12 +97,10 @@
 
       padding-top: 0.3em;
 
-      a {color: #000;}
 
       font-size: 1em;
       ul {
         li{
-          a {color: #333;}
         }
         font-size: 0.8em;
         list-style: none;
@@ -99,13 +113,13 @@
 
 .highlight {
   border-radius: 3px;
-  background: #eef;
+  background: #f6f6ff;
   padding: 1em;
   margin: 0;
   margin-bottom: 2em;
 
   pre {
-    padding: 8px 12px;
+    padding: 0px 12px;
     overflow-x: auto;
 
   }
