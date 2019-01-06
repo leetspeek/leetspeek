@@ -1,4 +1,4 @@
-# [leetspeek.org](https://leetspeek.org/)
+# [leetspeek.org](http://leetspeek.org/)
 
 leetspeek is a learning-oriented collective that is open to everyone, our
 primary focus is to encourage learning, blogging in order to deepen knowledge
