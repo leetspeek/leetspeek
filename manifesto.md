@@ -3,7 +3,7 @@ layout: page
 title: leetspeek Manifesto
 permalink: /manifesto/
 ---
-This is our manifesto; a public declaration of the intentions, motives  and views of the leetspeek Collective.
+This is our manifesto; a public declaration of the intentions, motives  and views of the leetspeek—Collective.
 
 leetspeek is a learning-oriented collective that is open to everyone, our primary focus is to encourage learning, blogging in order to deepen knowledge on various computer science areas.
 

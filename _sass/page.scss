@@ -1,17 +1,19 @@
 #page, #article {
 
-  font-size: 1em;
-  line-height: 1.8em;
+  font: 400 1em -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.5em;
+
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+
 
   p {
-    max-width: 75%;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    word-break: break-word;
+
   }
 
   ul {
-    max-width: 80%;
     padding-bottom:  1em;
   }
 
@@ -19,7 +21,7 @@
     padding: 0 1em;
   }
   padding-top: 1em;
-  max-width: 65em;
+  max-width: 55em;
   margin: 0 auto;
 
   h1.title {
@@ -48,14 +50,13 @@
     margin-bottom: 0.8em;
     border-left: 4px solid #ccc;
     background: #f1f1f1;
-    color:#333;
+    color:#111;
     //font-size: 1em;
     font-weight: bold;
     word-spacing: -0.3em;
   }
 
-  font-size: 1.1em;
-  font-family: 'Roboto', serif;
+
 
   #toc {
     padding: 0px;
@@ -98,14 +99,15 @@
 
 .highlight {
   border-radius: 3px;
-  background: #f1f1f1;
+  background: #eef;
   padding: 1em;
   margin: 0;
   margin-bottom: 2em;
 
   pre {
-    padding: 0;
-    margin: 0;
+    padding: 8px 12px;
+    overflow-x: auto;
+
   }
 }
 
@@ -186,6 +188,25 @@
   a.avatar {
     font-size: 1em;
     line-height: 0.8em;
+  }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+
+  #page, #article {
+
+
+    p {
+      max-width: unset;
+
+    }
+
+    ul {
+      max-width: unset;
+    }
+
   }
 
 }
