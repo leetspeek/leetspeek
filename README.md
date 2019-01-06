@@ -1,9 +1,8 @@
-# [leetspeek](https://leetspeek.tn/)
-
+# [leetspeek.org](https://leetspeek.org/)
 
 leetspeek is a learning-oriented collective that is open to everyone, our
- primary focus is to encourage learning, blogging in order to deepen knowledge
- on various computer science areas.
+primary focus is to encourage learning, blogging in order to deepen knowledge
+on various computer science areas.
 
 ## Getting Started
 
@@ -40,9 +39,7 @@ Follow the steps below for our contribution workflow.
 - Add your image in that folder.
 - Image can be added using this code 
 
-{% highlight markdown %}
-![Image title]({{ site.url }}/assets/img/username/image-name.png)
-{% endhighlight %}
+`![Image title]({{ site.url }}/assets/img/username/image-name.png)`
 
 
 ## Peer-reviewing
