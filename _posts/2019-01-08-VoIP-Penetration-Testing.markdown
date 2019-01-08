@@ -2,7 +2,7 @@
 layout: article
 title:  "VoIP Penetration Testing"
 date:   2019-01-08 11:19:50 +0100
-categories: Security / Pentest
+categories: Security Pentest
 authors: [rayenmessaoudi]
 ---
 
